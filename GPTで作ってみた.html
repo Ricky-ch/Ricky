@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ記事ページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        .article {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-section {
+            margin-top: 30px;
+        }
+
+        .comment-section h2 {
+            margin-top: 0;
+        }
+
+        .comment {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .comment-form {
+            margin-top: 20px;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>ブログタイトル</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">アバウト</a></li>
+                    <li><a href="contact.html">コンタクト</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <article class="article">
+            <h1>記事タイトル</h1>
+            <p>公開日: 2024年6月2日</p>
+            <p>ここに記事の内容が入ります。これはサンプルのテキストです。記事の詳細な内容をここに記載します。</p>
+        </article>
+
+        <section class="comment-section">
+            <h2>コメント</h2>
+            <div class="comment">
+                <p><strong>ユーザー1:</strong> これはとても興味深い記事です。</p>
+            </div>
+            <div class="comment">
+                <p><strong>ユーザー2:</strong> 素晴らしい情報をありがとう。</p>
+            </div>
+
+            <form class="comment-form">
+                <label for="comment">コメントを追加:</label>
+                <textarea id="comment" name="comment"></textarea>
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
