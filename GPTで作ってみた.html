@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ブログ記事ページ</title>
+    <title>Excelマクロの作り方</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,58 +22,44 @@
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+            padding: 10px 0;
+            text-align: center;
         }
 
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+        header h1 {
+            margin: 0;
+            font-size: 24px;
         }
 
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-
-        .article {
+        .content {
             background: #fff;
             padding: 20px;
             margin-top: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .comment-section {
-            margin-top: 30px;
+        h2 {
+            color: #333;
         }
 
-        .comment-section h2 {
-            margin-top: 0;
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
         }
 
-        .comment {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .comment-form {
+        .download-link {
             margin-top: 20px;
+            text-align: center;
         }
 
-        .comment-form textarea {
-            width: 100%;
-            height: 100px;
-            margin-bottom: 10px;
+        .download-link a {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -81,39 +67,44 @@
 <body>
     <header>
         <div class="container">
-            <h1>ブログタイトル</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="about.html">アバウト</a></li>
-                    <li><a href="contact.html">コンタクト</a></li>
-                </ul>
-            </nav>
+            <h1>Excelマクロの作り方</h1>
         </div>
     </header>
 
     <div class="container">
-        <article class="article">
-            <h1>記事タイトル</h1>
-            <p>公開日: 2024年6月2日</p>
-            <p>ここに記事の内容が入ります。これはサンプルのテキストです。記事の詳細な内容をここに記載します。</p>
-        </article>
+        <div class="content">
+            <h2>1. Excelマクロの概要と利点</h2>
+            <p>Excelマクロは、Excelの作業を自動化するためのプログラムです。定型業務を効率化し、作業ミスを減らすことができます。</p>
 
-        <section class="comment-section">
-            <h2>コメント</h2>
-            <div class="comment">
-                <p><strong>ユーザー1:</strong> これはとても興味深い記事です。</p>
-            </div>
-            <div class="comment">
-                <p><strong>ユーザー2:</strong> 素晴らしい情報をありがとう。</p>
-            </div>
+            <h2>2. マクロを有効にする手順</h2>
+            <ol>
+                <li>Excelを開きます。</li>
+                <li>[ファイル] > [オプション] をクリックします。</li>
+                <li>[セキュリティセンター] > [セキュリティセンターの設定] を選択します。</li>
+                <li>[マクロの設定] で [すべてのマクロを有効にする] を選びます。</li>
+            </ol>
 
-            <form class="comment-form">
-                <label for="comment">コメントを追加:</label>
-                <textarea id="comment" name="comment"></textarea>
-                <button type="submit">送信</button>
-            </form>
-        </section>
+            <h2>3. VBAの基本</h2>
+            <p>VBA（Visual Basic for Applications）は、Microsoft Office製品で使用されるプログラミング言語です。マクロを作成するために使用します。</p>
+
+            <h2>4. サンプルマクロコード</h2>
+            <pre><code>
+Sub SampleMacro()
+    MsgBox "Hello, World!"
+End Sub
+            </code></pre>
+            <p>上記のコードは、シンプルなメッセージボックスを表示するマクロです。</p>
+
+            <h2>5. アップロードされたファイルの具体的なマクロの説明</h2>
+            <p>以下に、アップロードされたファイルに含まれるマクロの説明を記載します。</p>
+            <pre><code>
+' ここに具体的なマクロのコードとその説明を記載します
+            </code></pre>
+
+            <div class="download-link">
+                <a href="ターゲット1900_小テスト自動作成プログラム.xlsm" download>Excelファイルをダウンロード</a>
+            </div>
+        </div>
     </div>
 </body>
 
